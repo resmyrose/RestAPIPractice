@@ -194,7 +194,7 @@ public class LoginSteps extends RestUtils {
 				
 				default : {
 					
-					System.out.println("Status Code is not 200 or 400 or 404");
+					System.out.println("Status Code is not 200 or 400 or 404 or 405");
 				}
 				
 				}
