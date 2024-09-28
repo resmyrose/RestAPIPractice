@@ -45,7 +45,7 @@ public class Login_reusableMethods  extends RestUtils{
 
 	    public Response sendRequest(Login login) throws FileNotFoundException {
 	        String reqBody = new Gson().toJson(login);
-	        request = given().spec(CommonSpec()).body(reqBody);
+	        request = given().spec(CommonSpec(login)).body(reqBody);
 	        LoggerLoad.info("======= Sending " + login.getScenario() + " with " + login.getMethod() + " request =======");
 
 	        Response response = null;
